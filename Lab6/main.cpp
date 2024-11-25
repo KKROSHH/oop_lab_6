@@ -11,6 +11,9 @@ int main() {
     // Додаємо співробітників
     empManager.addEmployee();
     empManager.addEmployee();
+    empManager.addEmployee();
+    empManager.addEmployee();
+    empManager.addEmployee();
 
     // Виводимо список співробітників
     empManager.printEmployees();
@@ -21,6 +24,16 @@ int main() {
 
     // Виводимо список співробітників після видалення
     empManager.printEmployees();
+
+    empManager.swapEmployees(0, 1);
+    empManager.printEmployees();
+    cout << "\n";
+
+    empManager.insertEmployee(5);
+    empManager.printEmployees();
+    cout << "\n";
+
+
 
     return 0;
 }
